@@ -16,9 +16,9 @@ This project uses machine learning to predict restaurant ratings based on variou
    ```
    
 2. Install dependencies:
-```bash
-pip install -r requirements.txt
-```
+   ```bash
+   pip install -r requirements.txt
+   ```
 
 ## Data Preparation
 
