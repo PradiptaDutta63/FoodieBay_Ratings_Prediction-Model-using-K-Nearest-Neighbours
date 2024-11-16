@@ -26,15 +26,15 @@ pip install -r requirements.txt
 ```menu_item```, and ```dish_liked``` are dropped.
 
 **2. Exploratory Data Analysis (EDA):**
-- Created a word cloud for cuisines to visualize popular cuisines.
-- Analyzed restaurant types with services like ```online_order``` and ```book_table```.
-- Visualized the relationship between restaurant type, average cost for two, and rating.
+   - Created a word cloud for cuisines to visualize popular cuisines.
+   - Analyzed restaurant types with services like ```online_order``` and ```book_table```.
+   - Visualized the relationship between restaurant type, average cost for two, and rating.
 
 **3. Feature Engineering:**
-- Converted categorical features into numerical using one-hot encoding.
-- Selected features impacting ratings: average cost for two, votes, average review ranking, and other restaurant/service types.
-- Split the data into training and test sets (70% train, 30% test).
-- Standardized numerical features using ```StandardScaler```.
+   - Converted categorical features into numerical using one-hot encoding.
+   - Selected features impacting ratings: average cost for two, votes, average review ranking, and other restaurant/service types.
+   - Split the data into training and test sets (70% train, 30% test).
+   - Standardized numerical features using ```StandardScaler```.
 
 ## Model Development
 
@@ -43,18 +43,18 @@ pip install -r requirements.txt
 - First trained a KNN model with ```k=3``` to predict ratings.
 - Performance metrics:
 
-- **RMSE:** Root Mean Squared Error
-- **R-Squared:** Explained Variance
-- **MAE:** Mean Absolute Error
+   - **RMSE:** Root Mean Squared Error
+   - **R-Squared:** Explained Variance
+   - **MAE:** Mean Absolute Error
 
 - Optimized `k` by evaluating RMSE for values between 1 and 30. The optimal `k` was found to be `2`.
 - Final model with `k=2` showed improved metrics.
 
 ## Results
 - **Best Model** (KNN with `k=2`):
-- **RMSE:** 0.253
-- **R-Squared:** 0.692
-- **MAE:** 0.137
+   - **RMSE:** 0.253
+   - **R-Squared:** 0.692
+   - **MAE:** 0.137
 
 These results indicate that the optimized KNN model effectively predicts restaurant ratings with relatively low error.
 
@@ -63,3 +63,7 @@ These results indicate that the optimized KNN model effectively predicts restaur
 - Experiment with other models like Random Forest and Gradient Boosting for potentially better accuracy.
 - Implement cross-validation and hyperparameter tuning to further improve performance.
 - Add more features or additional data sources to capture other factors influencing restaurant ratings.
+
+## Contributors
+Pradipta Dutta - Data Scientist
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/pradiptadutta63)
